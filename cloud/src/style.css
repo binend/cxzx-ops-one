@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义全局样式 */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', 'Noto Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* 自定义组件样式 */
+@layer components {
+  /* 玻璃效果卡片 */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-lg border border-white/30 rounded-xl shadow-lg;
+  }
+
+  .glass-card-dark {
+    @apply bg-black/60 backdrop-blur-lg border border-white/10 rounded-xl shadow-lg;
+  }
+
+  /* 渐变按钮 */
+  .btn-gradient {
+    @apply bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  /* 卡片悬停效果 */
+  .card-hover {
+    @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl;
+  }
+}
