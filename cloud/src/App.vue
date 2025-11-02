@@ -20,11 +20,11 @@ import AppHeader from '@/components/AppHeader.vue'
 import { onMounted, onUnmounted } from 'vue'
 
 onMounted(() => {
-  console.log('云平台智能运维管理系统已启动')
+  // 系统启动
 })
 
 onUnmounted(() => {
-  console.log('系统已关闭')
+  // 系统关闭
 })
 </script>
 

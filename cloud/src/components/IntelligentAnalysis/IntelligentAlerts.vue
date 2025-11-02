@@ -152,7 +152,7 @@ function exportAlerts() {
   }))
 
   // 简化的导出逻辑（实际应该生成CSV或PDF）
-  console.log('导出告警报告:', reportData)
+  // 导出告警报告数据
 
   appStore.addNotification({
     type: 'success',

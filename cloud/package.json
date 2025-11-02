@@ -1,7 +1,7 @@
 {
   "name": "cloud-platform-vue",
   "version": "1.0.0",
-  "description": "云平台智能运维管理系统 - Vue3版本",
+  "description": "云平台运维 - Vue3版本",
   "type": "module",
   "scripts": {
     "dev": "vite",
